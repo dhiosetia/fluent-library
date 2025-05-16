@@ -20,3 +20,49 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.LeftControl -- this our the keybind this you PC
 })
 ```
+
+### this tabs for the fluent
+this tabs how do that text put own you becuase own for you the name hub
+```lua
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main", Icon = "" }), -- this link icon is https://lucide.dev/icons/
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
+```
+Button
+```lua
+ Tabs.Main:AddButton({
+        Title = "Button",
+        Description = "Very important button",
+        Callback = function()
+end
+})
+```
+
+new Button
+```lua
+ Tabs.Main:AddButton({
+        Title = "Button",
+        Description = "Very important button",
+        Callback = function()
+  Window:Dialog({
+                Title = "Title",
+                Content = "This is a dialog",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+})
+end
+})
+```
