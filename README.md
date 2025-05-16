@@ -74,3 +74,17 @@ new Button
 end
 })
 ```
+
+toggle
+```lua
+ local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Toggle", Default = false })
+
+    Toggle:OnChanged(function()
+        print("Toggle changed:", Options.MyToggle.Value)
+    end)
+```
+
+new toggle
+```lua
+  Options.MyToggle:SetValue(false)
+```
