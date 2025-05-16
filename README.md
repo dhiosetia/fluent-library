@@ -11,9 +11,9 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 this theme how do that text put own you
 ```lua
 local Window = Fluent:CreateWindow({
-    Title = "Fluent " .. Fluent.Version,
-    SubTitle = "by dawid",
-    TabWidth = 160,
+    Title = "Fluent " .. Fluent.Version, --[[this fluent verison or deleted]] --[[one the title put name you own]]
+    SubTitle = "by dawid", -- this our made for you or the person
+    TabWidth = 160, -- how many to tab number
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- to you think blur have been true or false
     Theme = "Dark", -- theme you own the fluent
